@@ -1,0 +1,22 @@
+/* nav,css */
+
+.nav {
+    /* max-width: 160px; */
+    /* max-width: 50%; */
+    /* max-width: 16rem; */
+    /* max-width: 2in; */
+    /* max-width: 5.08cm; */
+    min-width: 16em;
+
+    /* background-color: blueviolet; */
+}
+
+.nav {
+    min-width: 16em;
+    & li {
+        list-style: none;
+        & a {
+            text-decoration: none;
+        }
+    }
+}

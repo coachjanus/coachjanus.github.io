@@ -1,0 +1,15 @@
+/* app.css */
+
+/* h1 {
+    color: var(--accentColor);
+} */
+
+.app-main-header-title {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.app-main-header-title--emphasis {
+    color: var(--accentColor);
+}

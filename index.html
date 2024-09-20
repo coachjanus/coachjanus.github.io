@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello world!</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* h1 {
+            color: rgb(255, 0, 162);
+            background-color: yellow; 
+            border: 1px solid black;
+
+        } */
+
+        
+    </style>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- wrapper app -->
-    <div>
+    <div class="app">
         <!-- aside -->
-         <aside>
+         <aside class="app-nav">
             <!-- header -->
-            <header>
-                <span>Menu</span>
+            <header class="app-nav-header">
+                <span class="app-nav-header--title">Menu</span>
                 <span><button>&lt;--</button></span>
-
             </header>
             <!-- navigation  ul ol dl -->
 
-            <ul>
-                <li><a href="index.html"><span>Home</span></a></li>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span>Home</span>
+                    </a>
+                </li>
                 <li><a href="catalog.html"><span>Catalog</span></a></li>
                 <li><a href="blog.html"><span>Blog</span></a></li>
                 <li><a href="about.html"><span>About</span></a></li>
@@ -30,11 +44,17 @@
          </aside>
 
          <!-- wrapper main -->
-          <dir>
-            <header>
-                <!-- hamburger -->
-                 <span><button></button></span>
-                 <h1><span>Super stor</span></h1>
+          <dir class="app-main">
+            <header class="app-main-header">
+                <!-- hamburger -->cl
+                 <span>
+                    <button class="icon-button">x</button>
+                </span>
+                 <!-- <h1 style="color: blue;background-color: yellow; border: 1px solid black;"><span>Super stor</span></h1> -->
+                <h1 class="app-main-header-title">
+                    <em class="app-main-header-title--emphasis">Shopaholic</em>
+                    <span>Super stor</span>
+                </h1>
             
                 <!-- nav -->
                 <nav>
