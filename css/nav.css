@@ -17,6 +17,9 @@
         list-style: none;
         & a {
             text-decoration: none;
+            background-color: transparent;
+            color: inherit;
+            height: 3.25rem;
         }
     }
 }

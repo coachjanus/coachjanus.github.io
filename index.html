@@ -5,16 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello world!</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        /* h1 {
-            color: rgb(255, 0, 162);
-            background-color: yellow; 
-            border: 1px solid black;
-
-        } */
-
-        
-    </style>
+    
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -25,13 +16,20 @@
             <!-- header -->
             <header class="app-nav-header">
                 <span class="app-nav-header--title">Menu</span>
-                <span><button>&lt;--</button></span>
+                <span class="app-nav--hide">
+                    <button class="icon-button icon-button--dark">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </span>
             </header>
             <!-- navigation  ul ol dl -->
 
             <ul class="nav">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">
+                        <span class="icon">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
                         <span>Home</span>
                     </a>
                 </li>
@@ -46,9 +44,9 @@
          <!-- wrapper main -->
           <dir class="app-main">
             <header class="app-main-header">
-                <!-- hamburger -->cl
-                 <span>
-                    <button class="icon-button">x</button>
+                <!-- hamburger -->
+                 <span class="app-nav--show">
+                    <button class="icon-button"><i class="fa-solid fa-bars"></i></button>
                 </span>
                  <!-- <h1 style="color: blue;background-color: yellow; border: 1px solid black;"><span>Super stor</span></h1> -->
                 <h1 class="app-main-header-title">
@@ -57,27 +55,48 @@
                 </h1>
             
                 <!-- nav -->
-                <nav>
-                    <a href=""><span>Cart</span></a>
-                    <a href=""><span>WL</span></a>
-                    <a href=""><span>Login</span></a>
+                <nav class="app-main-header-links">
+                    <a href="" class="app-main-header-link">
+                        <span class="icon-button"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </a>
+                    <a href=""><span class="icon-button"><i class="fa-solid fa-heart"></i></span></a>
+                    <a href=""><span class="icon-button"><i class="fa-solid fa-user"></i></span></a>
                 </nav>
 
             </header>
             <!-- content -->
-            <div>
-                <div>
-                    <main>
+            <div class="app-main-content">
+                <div class="app-content">
+                    <main class="content">
                         Main content
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error molestias, debitis, nemo, sint quidem similique neque laboriosam quae inventore totam iusto reprehenderit! Blanditiis repellendus cupiditate nisi sapiente modi qui.</div>
                     </main>
                 </div>
             </div>
           </dir>
 
           <!--  -->
-          <div>
-            <footer>
-                &copy; 2024
+          <div class="app-footer">
+            <footer class="footer">
+                <section class="footer-main">
+                    <div class="footer-main-item">
+                        <h3 class="footer-title">About</h3>
+
+                    </div>
+
+                </section>
+                <section class="footer-social">
+                    <div>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                        </div>
+                </section>
+                <section class="footer-legal">
+                    &copy; 2024
+                </section>
+               
             </footer>
           </div>
 
