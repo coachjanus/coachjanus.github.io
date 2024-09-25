@@ -6,3 +6,32 @@
     color: inherit;
     background-color: hsla(0, 0%, 0%, 0);
 }
+
+.btn {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-hero {
+    color: white;   
+    border: 0;
+    background-image: linear-gradient(90deg, #ee6352, var(--accentColorMuted), #ee6352);
+    background-size: 300%;
+    background-position: right;
+}
+
+.icon-actions {
+    font-size: .8em;
+}
+
+.icon {
+    height: 1.5em;
+    min-width: 1.5em;
+    width: 1.5em;
+}

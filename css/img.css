@@ -1,0 +1,24 @@
+.image {
+    border: 1px solid hsl(0, 0%, 90%);
+    width: 10em;
+    & img {
+        max-width: 100%;
+        background-color: hsl(0, 0%, 90%);
+        /* width: 16em; */
+        object-fit: cover;
+        display: block;
+
+    }
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-center {
+    background-position: center center;
+}
+
+.bg-attachment {
+    background-attachment: fixed;
+}
