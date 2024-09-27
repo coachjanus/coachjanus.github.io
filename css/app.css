@@ -28,6 +28,10 @@
     color: var(--accentColor);
 }
 
+.app-content {
+    padding: 1.5em;
+}
+
 .footer {
     background-color: hsl(0, 0%, 23%);
 }

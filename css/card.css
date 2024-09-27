@@ -2,7 +2,7 @@
     background-color: white;
     font-weight: 500;
     border: 1px solid hsla(0, 0%, 0%, 0.1);
-
+    position: relative;
 
 }
 
@@ -12,4 +12,20 @@
     font-size: 1.4em;
     border: 1px solid hsla(0, 0%, 0%, 0.1);
 
+}
+
+
+.card-wrapper::before {
+    background-color: red;
+    color: white;
+    font-size: .8em;
+    font-weight: 700;
+    letter-spacing: .1em;
+    position: absolute;
+    width: 6em;
+    content: "Action";
+    right: 0.5em;
+    top: 1.5em;
+    z-index: 10;
+    text-align: center;
 }

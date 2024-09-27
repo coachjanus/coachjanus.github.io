@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 /* root */
-html {
+
+/* html */
+:root {
     /* --accentColor: red; */
 
     /* --accentColor: rgb(255, 0, 0); */
@@ -22,6 +24,10 @@ body {
     -webkit-font-smoothing: antialiased;
     font-size: 1rem;
     line-height: 1.5;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0%;
+    box-sizing: border-box;
 
 }
 
@@ -32,4 +38,21 @@ a {
 
 h1 {
     font-size: calc(1.35em + 1.15vw);
+}
+
+h2 {
+    font-size: calc(1.2em + 1vw);
+    font-weight: 500;
+    border-bottom: 1px solid rgb(0 0 0 / .075);
+    margin-bottom: 1em;
+    padding-bottom: 3em;
+}
+
+.hero {
+    padding: 3em 2em 3em 2em;
+}
+
+.container {
+    display: block;
+    position: relative;
 }
