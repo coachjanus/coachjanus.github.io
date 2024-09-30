@@ -3,7 +3,10 @@
 /* h1 {
     color: var(--accentColor);
 } */
-
+.app {
+    display: flex;
+    min-height: 100vh;
+}
 
 .app-main{
     background-color: hsl(0, 0%, 96%);
@@ -12,6 +15,28 @@
     background-color: hsl(0, 0%, 23%);
     color: hsl(0, 0%, 80%);
     width: 16em;
+}
+
+.app-nav--show {
+    display: flex;
+    width: 2.6em;
+    align-items: center;
+    display: none;
+}
+
+.app-main-header {
+    height: 5em;
+    padding: 0 var(--gutter);
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, .075);
+    border-top: 1px solid black;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 20;
+    background-color: hsl(0, 0%, 100%);
+    width: calc(100% - 19em);
 }
 
 .app-main-header-title {
@@ -28,6 +53,15 @@
     color: var(--accentColor);
 }
 
+.app-main-header-links {
+    display: flex;
+    align-items: center;
+}
+
+.app-main-header-link {
+    text-decoration: none;
+    margin-left: 1.25em;
+}
 .app-content {
     padding: 1.5em;
 }

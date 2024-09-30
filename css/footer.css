@@ -1,0 +1,41 @@
+/*  */
+
+.footer {
+    width: 100%;
+    line-height: 1.5;
+    color: hsl(0, 0%, 80%);
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #777;
+}
+
+.footer-social-list a {
+    margin: .5rem;
+}
+
+.footer-legal {
+    padding: .5rem 1rem;
+}
+.footer-legal-list {
+    display: flex;
+    justify-content: space-around;
+    align-self: stretch;
+
+}

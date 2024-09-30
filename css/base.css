@@ -14,6 +14,7 @@
     /* --accentColor: #ff000080; */
     --accentColor: hsl(300, 50%, 50%);
     --accentColorMuted: hsl(300, 40%, 40%);
+    --gutter: 1.5em;
     
 }
 
@@ -37,7 +38,7 @@ a {
 }
 
 h1 {
-    font-size: calc(1.35em + 1.15vw);
+    font-size: calc(1.2em + 1vw);
 }
 
 h2 {
