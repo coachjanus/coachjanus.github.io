@@ -14,7 +14,7 @@
 .app-nav {
     background-color: hsl(0, 0%, 23%);
     color: hsl(0, 0%, 80%);
-    width: 16em;
+    width: 10em;
 }
 
 .app-nav--show {
@@ -68,4 +68,10 @@
 
 .footer {
     background-color: hsl(0, 0%, 23%);
+}
+
+.product-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }

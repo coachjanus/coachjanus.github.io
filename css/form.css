@@ -1,0 +1,35 @@
+
+.form-container {
+    width: 100%;
+    display: block;
+    /* justify-content: center; */
+}
+
+.form-container button {
+    margin: 0 auto;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--accentColor);
+
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: .5rem;
+}
+
+.input-group div {
+    padding: 0;
+    /* margin: 0; */
+    flex: 1;
+}
+
+input-group div:first-child {
+    margin-right: 1rem;
+}

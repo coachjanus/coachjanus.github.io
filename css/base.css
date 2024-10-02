@@ -56,4 +56,5 @@ h2 {
 .container {
     display: block;
     position: relative;
+    width: 100%;
 }
