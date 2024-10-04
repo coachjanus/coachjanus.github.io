@@ -14,10 +14,19 @@
 .footer a {
     text-decoration: none;
 }
-
+.footer-title {
+    padding-right: 2.5rem;
+}
 .footer-main {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1.25rem 2.5rem;
+}
+
+@media (min-width: 30rem) {
+    .footer-main {
+        justify-content: space-evenly;
+    }
 }
 
 .footer-social-list {

@@ -1,27 +1,88 @@
 /* app.css */
 
-/* h1 {
-    color: var(--accentColor);
-} */
 .app {
-    display: flex;
+    /* display: flex; */
     min-height: 100vh;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .app {
+        display: flex;
+        position: static;
+    }
 }
 
 .app-main{
     background-color: hsl(0, 0%, 96%);
+    contain: content;
 }
+
+@media (min-width: 768px) {
+    .app-main {
+        display: flex;
+        min-width: 0;
+        flex-flow: column;
+        flex: 1 1 0%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .app-main-content {
+        display: flex;
+        contain: content;
+        flex: 1 1 auto;
+    }
+}
+
 .app-nav {
     background-color: hsl(0, 0%, 23%);
     color: hsl(0, 0%, 80%);
-    width: 10em;
+    width: 16em;
+    contain: strict;
+}
+
+@media (max-width: calc(768px - 1px)) {
+    .app-nav {
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: -16em;
+        display: none;
+        z-index: 101;
+    }
+}
+
+@media (min-width: 768px) {
+    .app-nav {
+        width: 16em;
+        flex: 0 0 auto;
+        position: static;
+        overflow: hidden;
+        will-change: width;
+    }
 }
 
 .app-nav--show {
     display: flex;
     width: 2.6em;
-    align-items: center;
-    display: none;
+    /* align-items: center;
+    display: none; */
+}
+
+@media  (min-width: 768px) {
+    .app-nav--show {
+        /* display: flex;
+        width: 2.6em; */
+        align-items: center;
+        display: none;
+        height: 100%;
+        position: absolute;
+        top: 0;
+
+    }
+    
 }
 
 .app-main-header {
@@ -36,7 +97,7 @@
     position: fixed;
     z-index: 20;
     background-color: hsl(0, 0%, 100%);
-    width: calc(100% - 19em);
+    width: 100%;
 }
 
 .app-main-header-title {
@@ -55,15 +116,37 @@
 
 .app-main-header-links {
     display: flex;
-    align-items: center;
+    align-items:flex-start;
+    margin-right: 1.5rem;
 }
 
 .app-main-header-link {
     text-decoration: none;
-    margin-left: 1.25em;
+    font-size: .85em;
+        margin-right: .75em
+    
+}
+
+@media (min-width: 960px) {
+    .app-main-header-link {
+        font-size: 1em;
+        margin-right: 1.25em;
+    }
+}
+
+.app-main-header-link:first-child {
+    margin-left: 0;
 }
 .app-content {
     padding: 1.5em;
+    contain: content;
+}
+
+@media (min-width: 768px) {
+    .app-content {
+        min-width: 16em;
+        flex: 1 1 8%;
+    }
 }
 
 .footer {
