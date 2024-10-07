@@ -24,6 +24,11 @@
 
 }
 
+.card:hover {
+    /* transform: scale(1.2); */
+    box-shadow: 2px 2px 2px 1px hsla(0, 0%, 0%, 0.1);
+}
+
 .catalog h2 {
     background-color: white;
     font-weight: 500;

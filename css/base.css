@@ -9,6 +9,7 @@
     --accentColor: hsl(300, 50%, 50%);
     --accentColorMuted: hsl(300, 40%, 40%);
     --gutter: 1.5em;
+    --easing: cubic-bezier(.4, 0, .2, 1);
     
 }
 

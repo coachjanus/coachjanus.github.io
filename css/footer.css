@@ -39,6 +39,12 @@
     margin: .5rem;
 }
 
+.footer-social-list a:hover i {
+    color: var(--accentColor);
+    /* font-weight: 500; */
+    transform: scale(1.4);
+} 
+
 .footer-legal {
     padding: .5rem 1rem;
 }

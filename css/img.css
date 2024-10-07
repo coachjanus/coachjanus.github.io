@@ -11,6 +11,12 @@
     }
 }
 
+.image img:hover {
+    /* transform: rotate(45deg); */
+    transform: scale(1.2);
+    filter: hue-rotate(45deg);
+}
+
 .bg-cover {
     background-size: cover;
 }
