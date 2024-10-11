@@ -60,7 +60,7 @@
                         <span class="icon-button"><i class="fa-solid fa-cart-shopping"></i></span>
                     </a>
                     <a href="" class="app-main-header-link"><span class="icon-button"><i class="fa-solid fa-heart"></i></span></a>
-                    <a href="" class="app-main-header-link"><span class="icon-button"><i class="fa-solid fa-user"></i></span></a>
+                    <a href="#!" onclick="window.login.showModal();"  class="app-main-header-link"><span class="icon-button"><i class="fa-solid fa-user"></i></span></a>
                 </nav>
 
             </header>
@@ -482,38 +482,25 @@
         </symbol>
   </svg>
 
-  <script src="js/main.js" type="module">
-    "use strict"
-    // commentr
+  <dialog id="login">
+    <a href="#!" onclick="window.login.close();" title="Close" class="close fas fa-times"></a>
+    <div class="card">
+    <h2>Login</h2>
+    <form class="form-container">
+    <div class="input-group">
+    <label class="form-label">Username or email address<span>*</span></label>
+    <input type="text" placeholder="Username or Email" required class="form-control">
+    </div>
+    <div class="input-group">
+    <label class="form-label">Password<span>*</span></label>
+    <input type="password" placeholder="Password" required class="form-control">
+    </div>
+    <input type="submit" value="Sign In" />
+    </form>
+    </div>
+    </dialog>
 
-    /**
-     * docs
-     * 
-     **/
-
-     /*
-     block
-     c-comment
-     */
-    //  let a = 888
-    
-     // + - * / % 
-    {
-        var a = 2 + 2
-        console.log(a)
-    }
-   
-    
-    console.log(a)
-    var b = -2 - a
-    b = 777
-    const rof = 555
-    // rof = 'hello'
-    console.log(b)
-    // for = 66
-    // console.log(for, b)
-
-
+  <script src="/js/main.js" type="module">
   </script>
 </body>
 </html>
