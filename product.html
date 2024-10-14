@@ -8,8 +8,7 @@
     <meta name="keywords" content="keyword">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Home page</title>
-    <link rel="stylesheet" href="css/main.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="/css/main.css">
 
 </head>
 
@@ -40,30 +39,36 @@
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
-            <span>Catalog</span>
+            <span class="icon"><i class="fa-solid fa-house"></i></span>
+            <span>Calendar</span>
           </a>
         </li>
         <li>
           <a href="#" class="nav-link">
-            <span class="icon"><i class="fa-solid fa-list"></i></span>
-            <span>Blog</span>
+            <span class="icon"><i class="fa-solid fa-house"></i></span>
+            <span>Card</span>
           </a>
         </li>
         <li>
           <a href="#" class="nav-link">
-            <span class="icon"><i class="fa-solid fa-hashtag"></i></span>
-            
-            <span>Contact</span>
+            <span>Form</span>
           </a>
         </li>
         <li>
           <a href="#" class="nav-link">
-            <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
-            <span>About</span>
+            <span>Gallery</span>
           </a>
         </li>
-        
+        <li>
+          <a href="#" class="nav-link">
+            <span>Nested containers</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <span>Custom breakpoints</span>
+          </a>
+        </li>
       </ul>
     </aside>
 
@@ -74,7 +79,7 @@
         <!-- hamburger app-navShow -->
         <span class="app-nav-show">
           <!-- iconButton -->
-          <button class="icon-button">
+          <button class="icon-button" id="hamburger">
             <i class="fa-solid fa-bars"></i>
           </button>
         </span>
@@ -94,12 +99,12 @@
               <i class="fa-solid fa-heart"></i>
             </span>
           </a>
-          <a href="#" class="app-main-header-link">
+          <a href="cart.html" class="app-main-header-link">
             <span class="icon-button">
               <i class="fa-solid fa-cart-shopping"></i>
             </span>
           </a>
-          <a href="#" class="app-main-header-link">
+          <a href="#!" onclick="window.login.showModal();" class="app-main-header-link">
             <span class="icon-button">
               <i class="fa-solid fa-user"></i>
             </span>
@@ -125,86 +130,46 @@
             <!-- main content -->
             <main class="content">
 
-              <section class="py-5 mb-3">
-                <div class="responsive-container cart-container mb-3">
-                  <main>
-                        <table class="table">
-                          <thead>
-                          <tr class="text-gray-400">
-                              <th class="desc">Product</th>
-                              <th class="price">Price</th>
-                              <th class="quantity">Quantity</th>
-                              <th class="total">Total</th>
-                              <th class="action"></th>
-                          </tr>
-                          </thead>
+              <section class="Section" data-section="card">
+               
+              
+                <div class="responsive-container">
+                  <div class="product-container">
+                    <div class="card">
+                      <div class="card-figure">
+                        <figure class="image">
+                          <img src="images/product-5.jpg" alt="" srcset="">
                           
-                          <tbody class="">
-                              <tr>
-                                  <td class="desc">Subscription renewal</td>
-                                  <td class="amount">$8.99</td>
-                                  <td class="qty">1</td>
-                                  <td class="amount">$8.99</td>
-                                  <td class="">
-                                      <a class="remove" href="#!"><i class="fas fa-trash-alt small text-muted"></i></a>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="desc">Subscription renewal</td>
-                                  <td class="amount">$8.99</td>
-                                  <td class="qty">1</td>
-                                  <td class="amount">$8.99</td>
-                                  <td class="">
-                                      <a class="remove" href="#!"><i class="fas fa-trash-alt small text-muted"></i></a>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="desc">Subscription renewal</td>
-                                  <td class="amount">$8.99</td>
-                                  <td class="qty">1</td>
-                                  <td class="amount">$8.99</td>
-                                  <td class="">
-                                      <a class="remove" href="#!"><i class="fas fa-trash-alt small text-muted"></i></a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                        </table>
-              
-                  </main>
-                      
-                  <aside class="sidebar">
-                    <h2 class="text-uppercase mb-4">Cart total</h2>
-                    <div class="card border-0 rounded-0 p-lg-4 bg-light">
-                      <div class="card-body">
-                        <ul class="list-unstyled mb-0">
-                          <li class="d-flex">
-                            <strong class="text-uppercase">Subtotal</strong>
-                            <span>$250</span>
-                          </li>
-                          <li class="d-flex">
-                            <strong class="text-uppercase">Tax</strong>
-                            <span>$5</span>
-                          </li>
-                          <li class="border-bottom mb-3"></li>
-                            <li class="d-flex">
-                              <strong class="text-uppercase">Total</strong>
-                              <span>$250</span>
-                            </li>
-                            <li>
-                            <form action="#" class="form-container py-2">
-                              <div class="input-group">
-                                <input class="form-control mb-3" type="text" placeholder="Enter your coupon">
-                                <button class="btn btn-send w-100" type="submit"> <i class="fas fa-gift me-2"></i>Apply coupon</button>
-                              </div>
-                            </form>
-                          </li>
-                        </ul>
+                        </figure>
                       </div>
-                    </div>
-              
-                  </aside>
+                      <div class="card-body">
+                        <h3 class="card-title">Card title</h3>
+                        <p>A basic card component with an image, title, description, and call to action. By default, the image is on top and full-width, but inside larger containers the image is positioned on the left with the rest of the content beside it.</p>
+                        <div class="icon-actions">
+                          <svg class="icon icon--inline">
+                            <use xlink:href="#thumb_up"></use>
+                          </svg>
+                          <svg class="icon icon--inline">
+                            <use xlink:href="#insert_emoticon"></use>
+                          </svg>
+                          <svg class="icon icon--inline">
+                            <use xlink:href="#favorite"></use>
+                          </svg>
+                          <svg class="icon icon--inline">
+                            <use xlink:href="#insert_comment"></use>
+                          </svg>
+                          <svg class="icon icon--inline">
+                            <use xlink:href="#insert_link"></use>
+                          </svg>
+                          <svg class="icon icon--inline">
+                            <use xlink:href="#share"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
                 </div>
-              
+                
               </section>
 
               
@@ -225,9 +190,9 @@
         </div>
       </section>
 
-  
+         
 
-</div>
+    </div>
 
   </div>
 
@@ -393,6 +358,31 @@
         <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"></path>
       </symbol>
     </svg>
+
+    <dialog id="login">
+      <a href="#!" onclick="window.login.close();" title="Close" class="close fas fa-times"></a>
+     
+      <div class="card">
+        <h2>Login</h2>
+        <form class="form-container">
+          <div class="input-group">
+            <label class="form-label">Username or email address<span>*</span></label>
+            <input type="text" placeholder="Username or Email" required class="form-control">
+          </div>
+          <div class="input-group">
+            <label class="form-label">Password<span>*</span></label>
+            <input type="password" placeholder="Password" required class="form-control">
+          </div>
+                
+          <input type="submit" value="Sing In" />
+                
+          <p>
+            <a href="">Forget Password?</a>
+          </p>
+        </form>
+      </div>
+        
+    </dialog>
     <script type="module" src="/js/main.js"></script>
 </body>
 </html>

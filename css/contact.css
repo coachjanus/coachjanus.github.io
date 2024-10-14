@@ -1,13 +1,17 @@
-.contact-container {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(8, 1fr);
-}
+/*  */
 
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1rem;
+}
+ 
 .contact-main {
     grid-column: 1 / 7;
-}
 
+}
+  
 .contact-sidebar {
     grid-column: 7 / 9;
+    
 }

@@ -1,80 +1,91 @@
+/* card.css */
+
 .card {
-    background-color: white;
-    font-weight: 500;
-    border: 1px solid hsla(0, 0%, 0%, 0.1);
-    position: relative;
-    border-radius: 4px;
-    display: flex;
-    padding: 1em;
-    overflow: hidden;
-    flex-flow: column;
-    min-width: 0;
-
+  background:#fff;
+  border:1px solid rgba(0,0,0,.1);
+  border-radius:4px;
+  display:flex;
+  flex-flow:column;
+  min-width:0;
+  overflow:hidden;
+  padding:1em;
+  position:relative;
+  transition:flex-grow .5s;
+  
     & .card-figure {
-        width: 100%;
-        min-width: 0;
-        margin-bottom: 1em;
-        /* flex: 1; */
+      width:100%;
+      min-width:0;
+      margin-bottom:1em;
     }
-
     & .card-body {
-        /* max-width: 0; */
-        /* flex: 1; */
-    }
+        &:last-child {
+            margin-bottom: 0;
+        }
 
-}
-
-.card:hover {
-    /* transform: scale(1.2); */
-    box-shadow: 2px 2px 2px 1px hsla(0, 0%, 0%, 0.1);
-}
-
-.catalog h2 {
-    background-color: white;
-    font-weight: 500;
-    font-size: 1.4em;
-    border: 1px solid hsla(0, 0%, 0%, 0.1);
-    
-
-}
-
-.card-title {
-    font-size: 1.1rem;
-    margin: 0 0 calc(.75em / 1.4);
-}
-
-@media (min-width: 410px) {
-    .card {
-        flex-flow: row;
-    }
-    .card-figure {
-        border-right: 1px solid #eee;
-        margin-right: 1em;
-        margin-bottom: 0;
-        min-width: 0;
-        padding-right: 1em;
+        & .card-title {
+            font-weight: 600;
+            font-size: 1.1em;
+            margin: 0 0 calc(.75em / 1.4);
+        }
     }
 }
 
+@container (min-width: 384px) {
+      .card {
+        flex-flow:row
+      }
+      .card-figure {
+        border-right:1px solid #eee;
+
+        margin-right:1em;
+        margin-bottom:0;
+        min-width:0;
+        padding-right:1em;
+      }
+      .card-body {
+        min-width:0;
+      }
+}
+  
 @media (min-width: 490px) {
     .card {
-        flex-direction: row;
-        flex-wrap: wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 }
 
+.product .image.badge::before {
+  font-size:.8em;
+  -webkit-font-smoothing:initial;
+  font-weight:700;
+  position:absolute;
+  right:-3.1em;
+  text-align:center;
+  top:-1.2em;
+  transform:rotate(45deg);
+  transform-origin:0 0;
+  width:6em;
+  z-index:10
+}
 
-.card-wrapper::before {
-    background-color: red;
-    color: white;
-    font-size: .8em;
-    font-weight: 700;
-    letter-spacing: .1em;
-    position: absolute;
-    width: 6em;
-    content: "Action";
-    right: 0.5em;
-    top: 1.5em;
-    z-index: 10;
-    text-align: center;
+.product .image.badge.badge-new::before {
+  background-color:#40bf80;
+  color:#fff;
+  content:"New";
+  
+}
+
+.product .image.badge.badge-sale::before {
+  background-color:red;
+  color:#fff;
+  content:"Sale";
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-meta .price::before {
+  content:"$";
 }
