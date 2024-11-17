@@ -1,0 +1,13 @@
+/* navigation */
+
+#navigation {
+    background-color: azure;
+}
+
+#navigation ul {
+    list-style: none;
+}
+#navigation ul > li > a {
+    color: var(--navColor);
+    text-decoration: none;
+}

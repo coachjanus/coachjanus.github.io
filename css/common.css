@@ -1,0 +1,29 @@
+/* common */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+
+* {
+    margin: 0;
+}
+html {
+    --navColor: hsl(0, 0%, 30%);
+    --textColor: hsl(0, 0%, 10%);
+    --muteColor: hsl(0, 0%, 90%);
+}
+
+body {
+    font-family: Roboto, Times, serif;
+    font-size: .85rem;
+}
+
+h1 {
+    font-size: calc(1.1rem + 1.14vw);
+    font-weight: 600;
+    text-transform: uppercase;
+    word-spacing: .2em;
+    letter-spacing: .1em;
+    text-shadow: 1px 2px hsla(0 0% 0% / 0.08);
+}

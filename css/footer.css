@@ -1,0 +1,23 @@
+/* footer */
+
+/* footer {
+    background-color: black;
+    color: aliceblue;
+}
+
+footer a {
+    color: aliceblue;
+} */
+
+.footer {
+    background-color: black;
+    color: var(--muteColor);
+}
+
+.footer ul {
+    list-style: none;
+} 
+
+.footer a {
+    color: aliceblue;
+}
