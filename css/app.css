@@ -1,0 +1,11 @@
+.app-nav {
+    width: 16em;
+}
+
+.nav {
+    list-style: none;
+}
+
+.app-main {
+    background-color: hsl(0, 0%, 95%);;
+}

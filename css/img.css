@@ -1,0 +1,38 @@
+.picture {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+
+}
+
+.picture img{
+    display: block;
+    width: 100%;
+    /* object-fit: contain; */
+    /* object-fit: fill; */
+    object-fit: cover;
+    
+}
+
+.image {
+    border: 1px solid hsl(0, 0%, 90%);
+}
+.image img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-center {
+    background-position: center center;
+}
+
+.btn-hero {
+    background-image: linear-gradient(to right, rgb(0, 225, 0) 5%, rgb(30, 205, 5) 17%, rgb(0, 155, 85) 40%, rgb(2, 55, 1)
+85%, #025a1ff1 95% );
+}

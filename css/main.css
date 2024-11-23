@@ -1,9 +1,11 @@
 /* main css */
 
 @import url("common.css");
+@import url("app.css");
 @import url("contact.css");
 @import url("blog.css");
 @import url("footer.css");
 @import url("nav.css");
-
+@import url("img.css");
+@import url("card.css");
 
