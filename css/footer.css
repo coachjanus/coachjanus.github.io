@@ -10,7 +10,7 @@ footer a {
 } */
 
 .footer {
-    background-color: black;
+    background-color: var(--bgColor);
     color: var(--muteColor);
 }
 

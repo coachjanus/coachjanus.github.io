@@ -1,13 +1,26 @@
 /* navigation */
 
-#navigation {
+/* #navigation {
     background-color: azure;
+} */
+
+.nav {
+    list-style: none;
+    margin: 0 0 1em;
+    padding: 0;
+    padding-left: 1em;
+    min-width: 16em;
 }
 
-#navigation ul {
-    list-style: none;
+.app-nav-header--title {
+    color: hsl(0, 0%, 90%);
 }
-#navigation ul > li > a {
-    color: var(--navColor);
-    text-decoration: none;
+
+.nav a {
+    color: hsl(0, 0%, 90%);
+    /* text-decoration: none; */
+}
+
+.nav a:hover {
+    color: var(--accentCollor);
 }

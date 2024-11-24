@@ -31,8 +31,3 @@
 .bg-center {
     background-position: center center;
 }
-
-.btn-hero {
-    background-image: linear-gradient(to right, rgb(0, 225, 0) 5%, rgb(30, 205, 5) 17%, rgb(0, 155, 85) 40%, rgb(2, 55, 1)
-85%, #025a1ff1 95% );
-}

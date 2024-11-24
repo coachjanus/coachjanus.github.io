@@ -1,0 +1,39 @@
+
+.btn {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    padding: .375rem .75rem;
+}
+
+
+.btn-hero {
+    background-image: linear-gradient(
+        to right, 
+        rgb(0, 225, 0) 5%, 
+        rgb(30, 205, 5) 17%, 
+        rgb(0, 155, 85) 40%, 
+        rgb(2, 55, 1) 85%, 
+        #025a1ff1 95% 
+        );
+    color: white;
+    border-radius: 5%;
+
+}
+
+.button {
+    background-color: hsla(0, 0%, 0%, .1);
+    border: 1px solid transparent;
+    
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    white-space: nowrap;
+    cursor: pointer;
+
+}

@@ -7,16 +7,33 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
-html {
-    --navColor: hsl(0, 0%, 30%);
-    --textColor: hsl(0, 0%, 10%);
+
+:root {
+    --navColor: hsl(0, 0%, 90%);
+    --textColor: hsl(0, 0%, 25%);
     --muteColor: hsl(0, 0%, 90%);
+
+    --bgColor: hsl(0, 0%, 23%);
+    --accentCollor: hsl(300, 50%, 50%);
+
+
+
 }
 
 body {
-    font-family: Roboto, Times, serif;
-    font-size: .85rem;
+    /* font-family: Roboto, Times, serif;
+    font-size: .85rem; */
+    font: 1em / 1.5 system-ui;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: var(--textColor);
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -26,4 +43,13 @@ h1 {
     word-spacing: .2em;
     letter-spacing: .1em;
     text-shadow: 1px 2px hsla(0 0% 0% / 0.08);
+}
+
+img {
+    display: block;
+}
+
+.py-4 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }

@@ -1,0 +1,20 @@
+
+.icon-actions {
+    font-size: .8em;
+}
+
+.icon {
+    fill: currentColor;
+    height: 1.5em;
+    width: 1.5em;
+    min-width: 1.5em;
+
+}
+
+.icon-actions > .icon {
+    color: #ccc;
+}
+
+.icon-actions > .icon:hover {
+    color: var(--accentCollor);
+}

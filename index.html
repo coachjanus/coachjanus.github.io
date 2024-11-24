@@ -4,26 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My site</title>
-    <style>
-        div h3 {
-            color: blue;
-        }
-
-    </style>
+    
 
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     
     <div class="app">
-
+<!-- aside -->
         <aside class="app-nav">
             <header class="app-nav-header">
                 <span class="app-nav-header--title">Navigation</span>
                 <span class="app-nav--hide">
-                    <button>
+                    <a href="#" class="button">
                         <i class="fa-solid fa-xmark"></i>
-                    </button>
+                    </a>
                 </span>
 
             </header>
@@ -36,23 +31,35 @@
             </ul>
 
         </aside>
-
+<!-- main -->
         <main class="app-main">
+            <!-- header -->
             <header class="app-main-header">
                 <!-- hamburger -->
 
+                <span class="app-nav-show">
+                    <a href="#" class="button">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </span>
+
+                <h1 class="app-main-header-title">
+                    <em class="app-main-header-title--emphasis">
+                        Shopping
+                    </em>
+                    <span>in action.</span>
+                </h1>
+
             
-            <nav id="navigation" role="navigation">
-        
-                <a href="login.html"><i class="fa-regular fa-user"></i></a>
-                <a href="cart.html" title="Shopping cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
-                
+            <nav id="navigation" role="navigation" class="app-main-header-links">
+                <a href="login.html"><i class="fa-regular fa-user app-main-header-link"></i></a>
+                <a href="cart.html" title="Shopping cart"><i class="fa-solid fa-cart-shopping app-main-header-link"></i></a>
+                <a href="wishlist.html"><i class="fa-regular fa-heart app-main-header-link"></i></a> 
             </nav>
             
         </header>
-
-        <section class="hero bg-cover bg-center" style="background-image: url(images/bg-banner.jpg);">
+<!-- hero -->
+        <section class="hero bg-cover bg-center py-4" style="background-image: url(images/bg-banner.jpg);">
             <div class="container">
                 <p>New Inspiration 2024</p>
                 <h1>15% off on new season</h1>
@@ -73,7 +80,7 @@
 
                                 </div>
                                 <div class="card-body">
-                                    <h3>Card title</h3>
+                                    <h3 class="card-title">Card title</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <div class="icon-actions">
                                         <svg class="icon icon--inline">
@@ -106,63 +113,7 @@
         </main>
     </div>
 
-
-
-    
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nesciunt quaerat perspiciatis, adipisci voluptate quasi, minus accusamus dolor itaque, totam qui placeat sunt eos non beatae maiores velit earum quisquam?</p>
-
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nesciunt quaerat perspiciatis, adipisci voluptate quasi, minus accusamus dolor itaque, totam qui placeat sunt eos non beatae maiores velit earum quisquam?</p>
-
-    <video controls width="250">
-        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
-        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
-        <p>Your browser doesn't support HTML video. Here is a <a
-        href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm">link to the video</a> instead.</p>
-    </video>
-
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nesciunt quaerat perspiciatis, adipisci voluptate quasi, minus accusamus dolor itaque, totam qui placeat sunt eos non beatae maiores velit earum quisquam?</p>
-    <hr>
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
-    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa possimus facere similique quos amet voluptatem accusamus, deserunt, dolore, doloribus corrupti nesciunt assumenda eaque quas atque sequi vel modi ducimus voluptas.</small>
-
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nesciunt quaerat perspiciatis, adipisci voluptate quasi, <br>minus accusamus dolor itaque, totam qui placeat sunt eoshr non beatae maiores velit earum quisquam?
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nesciunt quaerat perspiciatis, adipisci voluptate quasi, minus accusamus dolor itaque, totam qui placeat sunt eos non beatae maiores velit earum quisquam?
-
-    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sunt incidunt ab nulla nisi! Fuga aspernatur est enim consectetur sint suscipit, commodi iste assumenda, voluptates labore accusantium ea quisquam dolor.</blockquote>
-
-    <blockquote cite="https://www.ukrlib.com.ua/books/printit.php?tid=1052">Но зла Юнона, суча
-        дочка, Розкудкудакалась, як квочка, — Енея не любила — страх; Давно уже вона хотіла, Його
-        щоб душка полетіла К чортам і щоб і дух не пах.
-    </blockquote>
-
-    <pre cite="https://www.ukrlib.com.ua/books/printit.php?tid=1052">
-        Но зла Юнона, суча дочка, 
-        Розкудкудакалась, як квочка, 
-        — Енея не любила — страх; 
-        Давно уже вона хотіла, 
-        Його щоб душка полетіла 
-        К чортам і щоб і дух не пах.
-    </pre>
-
-<div>
-    <h3>Hello HTML</h3>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Voluptate officiis impedit debitis libero at perferendis repellat cumque architecto tempora, atque sint dolor</span> reiciendis saepe voluptatibus eum laudantium sed hic facere!</div>
-<div>
-    <div class="picture"><img src="images/product6.jpg" alt="My jpeg" style="float: right;"> </div>
-    
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officiis impedit debitis libero at perferendis repellat cumque architecto tempora, atque sint dolor reiciendis saepe voluptatibus eum laudantium sed hic facere!</div>
-<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officiis impedit debitis libero at perferendis repellat cumque architecto tempora, atque sint dolor reiciendis saepe voluptatibus eum laudantium sed hic facere!</div>
-
-
-
-
-
-<main>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, animi. Sint reiciendis dolor, praesentium itaque suscipit aperiam ad quia ipsam quo libero distinctio, deserunt omnis optio placeat, facere harum quod?
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt maiores perferendis unde? Dolores, hic quibusdam itaque, voluptas minima quod, totam quasi assumenda qui eius cupiditate nisi dolorem eligendi ipsam error.</div>
-</main>
-<aside>Aside</aside>
-
+<!-- footer -->
 <footer class="footer">
     <nav>
         <ul>

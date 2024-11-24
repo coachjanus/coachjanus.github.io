@@ -1,11 +1,43 @@
 .app-nav {
     width: 16em;
+    background-color: var(--bgColor);
 }
 
-.nav {
-    list-style: none;
-}
 
 .app-main {
     background-color: hsl(0, 0%, 95%);;
+}
+
+.app-main-header {
+    background-color: hsl(0, 0%, 100%);
+    border-top: 1px solid var(--accentCollor);
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.075);
+    height: 5em;
+    padding: 0 1.5rem;
+}
+
+.app-main-header-title {
+    color: #999;
+    font-weight: 700;
+    letter-spacing: .1em;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    text-transform: uppercase;
+    white-space: nowrap;
+    word-spacing: .2em;
+    text-shadow: 1px 1px hsla(0, 0%, 0%, 0.075);
+}
+
+.app-main-header-title--emphasis {
+    margin-right: .2em;
+    color: var(--accentCollor);
+
+}
+
+.app-main-header-links {
+
+}
+.app-main-header-link {
+    margin-left: 1.25rem;
 }
