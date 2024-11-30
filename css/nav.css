@@ -1,9 +1,5 @@
 /* navigation */
 
-/* #navigation {
-    background-color: azure;
-} */
-
 .nav {
     list-style: none;
     margin: 0 0 1em;
@@ -18,9 +14,14 @@
 
 .nav a {
     color: hsl(0, 0%, 90%);
-    /* text-decoration: none; */
+    padding: 0 .35em;
+    background-color: transparent;
+    min-width: 100%;
+    display: block;
+    text-decoration: none;
 }
 
 .nav a:hover {
     color: var(--accentCollor);
+    background-color: hsl(0, 0%, 25%);
 }

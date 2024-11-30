@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My site</title>
-    
-
+    <title>My cart</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -70,39 +68,60 @@
                 <div class="app-content">
                     <article class="content">
                         <section>
-                            <div class="product-container">
-                                <div class="card card-badge">
-                                    <div class="card-figure">
-                                        <figure class="image">
-                                            <img src="images/product6.jpg" alt="">
-                                        </figure>
+                            <div class="cart-container">
+                                <div class="main">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Product</th>
+                                                <th>Price</th>
+                                                <th>Quantity</th>
+                                                <th>Total</th>
+                                                <th>Actions</th>
+                                            </tr>
 
-                                    </div>
-                                    <div class="card-body">
-                                        <h3 class="card-title">Card title</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <div class="icon-actions">
-                                            <svg class="icon icon--inline">
-                                            <use xlink:href="#thumb_up"></use>
-                                            </svg>
-                                            <svg class="icon icon--inline">
-                                            <use xlink:href="#insert_emoticon"></use>
-                                            </svg>
-                                            <svg class="icon icon--inline">
-                                            <use xlink:href="#favorite"></use>
-                                            </svg>
-                                            <svg class="icon icon--inline">
-                                            <use xlink:href="#insert_comment"></use>
-                                            </svg>
-                                            <svg class="icon icon--inline">
-                                            <use xlink:href="#insert_link"></use>
-                                            </svg>
-                                            <svg class="icon icon--inline">
-                                            <use xlink:href="#share"></use>
-                                            </svg>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Black cat</td>
+                                                <td>100</td>
+                                                <td>10</td>
+                                                <td>10000</td>
+                                                <td><i class="fas fa-trash-alt"></i></td>
+                                            </tr>
+
+                                            
+
+                                        </tbody><tr>
+                                                <td>White cat</td>
+                                                <td>90</td>
+                                                <td>10</td>
+                                                <td>9000</td>
+                                                <td><i class="fas fa-trash-alt"></i></td>
+                                            </tr>
+
+                                    </table>
+                                </div>
+                                <aside class="sidebar">
+                                    <h3>Cart total</h3>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul class="unstyled">
+                                                <li class="d-flex">
+                                                    <strong>Subtotal:</strong> <span>2000</span>
+                                                </li>
+                                                <li class="d-flex">
+                                                    <strong>Tax:</strong> <span>20</span>
+                                                 
+                                                </li>
+                                                <li class="d-flex">
+                                                    <strong>Total: </strong> <span>2040</span>
+                                                    
+                                                </li>
+                                            </ul> 
                                         </div>
                                     </div>
-                                </div>
+                                </aside>
                             </div>
                         </section>
 

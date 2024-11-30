@@ -1,23 +1,43 @@
 /* footer */
 
-/* footer {
-    background-color: black;
-    color: aliceblue;
-}
-
-footer a {
-    color: aliceblue;
-} */
-
 .footer {
     background-color: var(--bgColor);
     color: var(--muteColor);
+    width: 100%;
+    line-height: 1.5;
 }
 
 .footer ul {
     list-style: none;
+    padding-left: 0;
 } 
 
 .footer a {
     color: aliceblue;
+}
+.footer-main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.3rem 2rem;
+}
+.footer-social {
+    padding: 1rem 2rem;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-list a {
+    margin: .5rem;
+}
+
+.footer-legal {
+    padding: 1rem 2rem;
+}
+
+.footer-legal-list {
+    display: flex;
+    justify-content: space-evenly;
 }
