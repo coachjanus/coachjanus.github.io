@@ -1,13 +1,44 @@
 /* app */
 .app {
-    display: flex;
+    /* display: flex; */
     position: relative;
     min-height: 100vh;
 }
+
+@media (min-width: 768px) {
+    .app {
+        display: flex;
+        position: static;
+        
+    }
+    
+}
+
 /* aside */
 .app-nav {
     width: 16em;
     background-color: var(--bgColor);
+}
+
+
+@media (max-width: 767px) {
+    .app-nav {
+        position: absolute;
+        left: -16em;
+        top: 0;
+        bottom: 0;
+    }
+    
+}
+@media (min-width: 768px) {
+    .app-nav {
+        width: 16em;
+        flex: 0 0 auto;
+        overflow: hidden;
+        position: static;
+        will-change: width;
+    }
+    
 }
 
 .app-nav-header {
@@ -28,11 +59,18 @@
 /* main */
 .app-main {
     background-color: hsl(0, 0%, 95%);
-    display: flex;
-    min-width: 0%;
-    flex-flow: column;
-    flex: 1 1 0%;
 }
+@media (min-width:768px) {
+    .app-main {
+        display: flex;
+        min-width: 0%;
+        flex-flow: column;
+        flex: 1 1 0%;
+    }
+    
+}
+
+
 
 .app-main-header {
     background-color: hsl(0, 0%, 100%);
@@ -48,10 +86,20 @@
 .app-nav-show {
     color: #999;
     width: 2.6em;
-    /* display: flex; */
+    display: flex;
+}
 
-    display: none; 
-
+@media (min-width:768px) {
+    .app-nav-show {
+        align-items: center;
+        
+        display: none; 
+        height: 100%;
+        position: absolute;
+        top: 0;
+    
+    }
+    
 }
 
 .app-main-header-title {
@@ -84,4 +132,10 @@
     text-decoration: none;
     color: #999;
     
+}
+
+.product-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
 }

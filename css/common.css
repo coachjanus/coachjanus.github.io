@@ -37,7 +37,8 @@ a {
 }
 
 h1 {
-    font-size: calc(1.1rem + 1.14vw);
+    /* font-size: calc(1.1rem + 1.14vw); */
+    font-size: clamp(1em, 1.3em, calc(1.4rem + 1.1vw));
     font-weight: 600;
     text-transform: uppercase;
     word-spacing: .2em;

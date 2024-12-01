@@ -28,8 +28,12 @@
 
 .card-title {
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: clamp(1em, 1.2em, 1.4em);
     margin: 0 0 calc(.75em / 1.4);
+}
+
+.card-body p {
+    font-size: clamp(.8em, .9em, 1rem);
 }
 
 .card-badge::before {

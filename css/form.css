@@ -1,0 +1,32 @@
+.form-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .35em .75em;
+    border: 1px solid var(--muteColor);
+
+}
+.form-control:focus {
+    border: 1px solid var(--accentCollor);
+
+}
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+}
+
+.btn-primary {
+    background-color: blueviolet;
+    color: white;
+    font-weight: 500;
+    border-color: blueviolet;
+    border-radius: 5%;
+}
