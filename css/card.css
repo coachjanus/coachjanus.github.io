@@ -43,9 +43,11 @@
     font-size: .8em;
     font-weight: 700;
     position: absolute;
-    top: 1.2em;
-    right: 1.1em;
+    top: .5em;
+    right: -1.8em;
     width: 6em;
     text-align: center;
+    transform: rotate(45deg);
+    z-index: 2;
 }
 

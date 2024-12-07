@@ -24,6 +24,11 @@
     object-fit: cover;
 }
 
+.image img:hover {
+    transform: scale(1.2);
+    filter:opacity(.5);
+}
+
 .bg-cover {
     background-size: cover;
 }

@@ -14,16 +14,24 @@
 
 .btn-hero {
     background-image: linear-gradient(
-        to right, 
+        90deg, 
         rgb(0, 225, 0) 5%, 
-        rgb(30, 205, 5) 17%, 
-        rgb(0, 155, 85) 40%, 
-        rgb(2, 55, 1) 85%, 
-        #025a1ff1 95% 
+        #1ecd05 17%, 
+        rgb(4, 176, 44) 40%, 
+        rgb(2, 129, 27) 85%, 
+        rgb(2, 106, 30) 95% 
         );
     color: white;
     border-radius: 5%;
+    padding: .5em 1em;
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 350ms;
 
+}
+
+.btn-hero:hover {
+    background-position: right;
 }
 
 .button {
@@ -35,5 +43,12 @@
     border-radius: 4px;
     white-space: nowrap;
     cursor: pointer;
+    transition: background .2s cubic-bezier(0.075, 0.82, 0.165, 1), opacity .2s cubic-bezier(0.19, 1, 0.22, 1), transform .2s ease-in;
 
+}
+
+.button:hover {
+    background-color: hsla(0, 0%, 0%, .6);
+    opacity: .8;
+    transform: scale(1.2);
 }

@@ -51,8 +51,13 @@ img {
 }
 
 .py-4 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.px-4 {
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .unstyled {
