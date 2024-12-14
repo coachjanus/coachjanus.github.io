@@ -1,142 +1,77 @@
 "use strict"
-// comment
 
-/**
- * comment
- */
-
-let a = 2
-const A = 3
-
-let a1 = 21
-let A_12qwert = "hello"
-const _rat = "Rat"
-const $_my_var = 123
-
-let b = 2
-a + b
-
-const product_container = ""
-const productContainer = ""
-
-{
-    let p = "Hello p"
-    console.log(typeof(p))
-    // alert(p)
+function fn1() {
+    var message = "Hello";
+    console.log(message);
 }
 
-// p = "my p"
+fn1();
 
-// alert(p)
-
-var w = "my w"
-
-
-{
-    let p = 6666
-    w = 7777
-    console.log(w + p)
+var message = "Hello";
+function fn2() {
+    
+    console.log(message);
 }
 
-// if = 123 error
+fn2();
 
-// let confi = confirm("Well, let's go?")
-
-// Boolean
-
-// console.log(confi) // true | false 
-
-console.log(1 + 2 === 3)
-console.log(0.1 + 0.2 === 0.3)
-
-// let x = prompt("Enter x = ", "0")
-
-// let y = prompt("Enter y = ", "0")
-
-// console.log(x + y)
-
-// console.log(+x + +y)
-
-let person = {
-    firstName: "John",
-    lastName: "Doe"
+function fn3() {
+    message = "Hello world";
+    console.log(message);
 }
 
-console.log(typeof(person))
-console.log(typeof(null))
-console.log(typeof(undefined))
+fn3();
+
+function fn4(message) {
+    
+    console.log(message);
+}
+
+fn4("Hello function ");
 
 
-// let x = prompt("Enter x = ", "0")
-// let y = prompt("Enter y = ", "0")
-// console.log("x: ", isNaN(x))
+function fn5(text) {
+    return "Hello " + text;
+    
+}
+console.log(fn5("function with args"));
 
-// if (isNaN(x) && isNaN(y)) {
-//     console.log("x or y is not a number: ")
-// }
-// else {
-//     console.log(+x + +y)
-// }
+// sayHello();
+// Uncaught ReferenceError: can't access lexical declaration 'sayHello' before initialization
+
+let sayHello = function() {
+    console.log("Hello fx");
+}
+
+sayHello();
 
 
-// if (!isNaN(x) && !isNaN(y)) {
-//     console.log(+x + +y)
-   
-// }
-// else {
-//     console.log("x or y is not a number: ")
-// }
+let add = function(x, y) {
+    return x + y;
+}
 
-// console.log(x + y)
+console.log(add(6, 7));
 
-// console.log(+x + +y)
+let div = (x, y) => x / y;
+console.log(div(6, 7));
 
-// calculator
-
-let x = prompt("Enter x = ", "0")
-let y = prompt("Enter y = ", "0")
-let o = prompt("Enter operation = ", "+")
-
-// + - * /
-
-if (!isNaN(x) && !isNaN(y)) {
-
-    x = +x
-    y = +y
-
-    if (o == "+") {
-        console.log("x + y = ", x + y)
+(
+    function() {
+        // 
     }
-    else if (o == "-") {
-        console.log("x - y = ", x - y)
-    }
-    else if (o == "*") {
-        console.log("x * y = ", x * y)
-    }
-    else if (o == "/") {
-        if (y !=0) {
-            console.log("x / y = ", x / y)
-        } else {
-            console.log("Zero dividing")
-        }
-        
-    }
-    else {
-        console.log("Bad operation")
-    }
-}
-else {
-    console.log("x or y is not a number: ")
+)();
+
+(() => {})();
+
+
+function hi(name) {
+    console.log("Hello " + name);
 }
 
-switch (o) {
-    case '+':
-        console.log("x + y = ", x + y)
-        break
-    case '-':
-        console.log("x - y = ", x - y)
-        break
-    // 
-    default:
-        console.log("Bad operation")
+function hiThere(cb) {
+    const name = "John Doe";
+    cb(name);
 }
+
+hiThere(hi)
+

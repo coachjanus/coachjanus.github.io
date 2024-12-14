@@ -46,6 +46,16 @@ h1 {
     text-shadow: 1px 2px hsla(0 0% 0% / 0.08);
 }
 
+.h1 {
+    font-size: clamp(1em, 1.3em, calc(1.4rem + 1.1vw));
+    font-weight: 700;
+    text-transform: uppercase;
+    word-spacing: .15em;
+    letter-spacing: .05em;
+    text-shadow: 1px 2px hsla(0 0% 0% / 0.1);
+    color: blueviolet;
+}
+
 img {
     display: block;
 }
