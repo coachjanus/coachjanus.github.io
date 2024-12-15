@@ -36,10 +36,10 @@
     font-size: clamp(.8em, .9em, 1rem);
 }
 
-.card-badge::before {
-    background-color: red;
-    color: white;
-    content: "New";
+.product .image.badge::before {
+    /* background-color: red; */
+    /* color: white; */
+    /* content: "New"; */
     font-size: .8em;
     font-weight: 700;
     position: absolute;
@@ -49,5 +49,29 @@
     text-align: center;
     transform: rotate(45deg);
     z-index: 2;
+}
+
+.product .image.badge.badge-new::before {
+    background-color: limegreen;
+    color: white;
+    content: "New";
+}
+
+.product .image.badge.badge-sale::before {
+    background-color: red;
+    color: white;
+    content: "Sale";
+}
+
+.product .image.badge.badge-sold::before {
+    background-color: violet;
+    color: white;
+    content: "Sold";
+}
+
+.product-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
