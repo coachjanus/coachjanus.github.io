@@ -5,6 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+
+        /* html {
+            --mainTextColor: darkslategray;
+            background-color: #f0f0f0;
+        } */
+
+        /* body {   
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--mainTextColor);
+        } */
+        /* pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+            color: var(--preTextColor);
+        } */
+        /* nav {
+            background-color: #333;
+            padding: 10px;
+        } */
+        /* nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        } */
+        /* nav a:hover {
+            text-decoration: underline;
+        } */
+        /* main {
+            padding: 20px;
+            --preTextColor: darkred;
+        } */
+        /* footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            color: darkgreen;
+            padding: 10px;
+            
+        } */
+        /* footer ul {
+            list-style-type: none;
+            padding: 0;
+        } */
+        /* footer ul li {
+            display: inline;
+            margin-right: 10px;
+        } */
+        /* footer ul li a {
+            text-decoration: none;
+            color: #333;
+        } */
+        /* footer ul li a:hover {
+            text-decoration: underline;
+        }          */
+
+        /* a {
+            color: darkslategray;
+        } */
+    </style>
    
 </head>
 <body>
@@ -17,44 +82,66 @@
     </nav>
     
     <!-- main content  -->
-    <main>
+    <main id="main-content">
+
         <header>
             <p>Елемент header зазвичай має містити заголовок розділу</p>
             <h1>Welcome to My Website</h1>
         </header>
 
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ol>
-    <p>This is a <b>bold</b> statement <i>in italics</i> on my website.</p>
-     <p>This is a <strong>bold</strong> statement <em>in italics</em> on my website.</p>
-    <a href="https://www.google.com" target="_blank">Visit Google.com</a>
-    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <small>Small text</small> Ad harum eaque atque voluptatibus ullam fugit. Natus ipsa deserunt, quo debitis tenetur officia, inventore voluptatibus sunt nisi animi eum repellendus ex?</div>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
 
-    <blockquote cite="https://www.ukrlib.com.ua/books/printit.php?tid=1052">Но зла Юнона, суча дочка, Розкудкудакалась, як квочка, — Енея не любила — страх; Давно уже вона хотіла, Його
-    щоб душка полетіла К чортам і щоб і дух не пах.
-    </blockquote>
+        <p>This is a <b>bold</b> statement <i>in italics</i> on my website.</p>
+        <p>This is a <strong>bold</strong> statement <em>in italics</em> on my website.</p>
+        <a href="https://www.google.com" target="_blank">Visit Google.com</a>
 
-    <pre>
-    Но зла Юнона, суча дочка,
-    Розкудкудакалась, як квочка, —
-    Енея не любила — страх;
-    Давно уже вона хотіла,
-    Його щоб душка полетіла
-    К чортам і щоб і дух не пах.
-    </pre>
+
+        <div class="post">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <small style="color: var(--preTextColor);">Small text</small> Ad harum eaque atque voluptatibus ullam fugit. Natus ipsa deserunt, quo debitis tenetur officia, inventore voluptatibus sunt nisi animi eum repellendus ex?</p>
+
+            <h3 class="h3">Heading 3</h3>
+            <p class="parent">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="child">A maxime repellendus debitis esse suscipit molestiae corrupti possimus voluptatem modi!</span> Natus accusamus sequi atque! Blanditiis sint dignissimos, nihil facere ut dolorum.</p>
+
+            <h3 class="h3">Heading 3</h3>
+            <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. A maxime repellendus debitis esse suscipit molestiae corrupti possimus voluptatem modi! Natus accusamus sequi atque! Blanditiis sint dignissimos, nihil facere ut dolorum.</p>
+
+
+            <h3 class="h3"  >Heading 3</h3>
+            <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. A maxime repellendus debitis esse suscipit molestiae corrupti possimus voluptatem modi! Natus accusamus sequi atque! Blanditiis sint dignissimos, nihil facere ut dolorum.</p>
+
+        </div>
+
+        <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. A maxime repellendus debitis esse suscipit molestiae corrupti possimus voluptatem modi! Natus accusamus sequi atque! Blanditiis sint dignissimos, nihil facere ut dolorum.</p>
+
+
+
+        <blockquote cite="https://www.ukrlib.com.ua/books/printit.php?tid=1052">Но зла Юнона, суча дочка, Розкудкудакалась, як квочка, — Енея не любила — страх; Давно уже вона хотіла, Його
+        щоб душка полетіла К чортам і щоб і дух не пах.
+        </blockquote>
+
+        <pre>
+        Но зла Юнона, суча дочка,
+        Розкудкудакалась, як квочка, —
+        Енея не любила — страх;
+        Давно уже вона хотіла,
+        Його щоб душка полетіла
+        К чортам і щоб і дух не пах.
+        </pre>
+
     </main>
  
 <!-- footer -->
-<footer>
+<footer id="footer">
     <ul>
-    <li><a href="/privacy">Privacy Policy</a></li>
-    <li><a href="/terms">Terms of Service</a></li>
-    <li><a href="/contact">Contact Us</a></li>  
-</ul>
-<hr>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/terms.html">Terms of Service</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>  
+    </ul>
+    <hr>
     <p>&copy; 2026 My Website. All rights reserved.</p>
 </footer>
 

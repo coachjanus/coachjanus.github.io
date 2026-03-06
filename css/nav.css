@@ -1,0 +1,6 @@
+/* Navigation Styles */
+
+
+li:first-of-type + li {
+    color: red;
+}

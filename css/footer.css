@@ -1,0 +1,20 @@
+/* Footer Styles */
+
+#footer {
+    background-color: #f1f1f1;
+    color: darkgreen;
+    text-align: start;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer {
+    background-color: #f1f1f1;
+    color: darkgreen;
+    text-align: start;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

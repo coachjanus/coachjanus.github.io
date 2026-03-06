@@ -1,0 +1,30 @@
+/* Common Styles */
+html {
+    --mainTextColor: darkslategray;
+    --preTextColor: darkred;
+    background-color: #f0f0f0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--mainTextColor);
+}
+
+a {
+    color: darkslategray;
+}
+
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+    color: var(--preTextColor);
+}
