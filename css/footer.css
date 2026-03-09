@@ -1,20 +1,51 @@
 /* Footer Styles */
 
-#footer {
-    background-color: #f1f1f1;
-    color: darkgreen;
-    text-align: start;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
 footer {
-    background-color: #f1f1f1;
-    color: darkgreen;
+    background-color: #4CAF50;
+    color: beige;
     text-align: start;
     padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
+
+.footer{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}   
+
+.footer .row a {
+    color: beige;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}   
+.footer .row a:hover {
+    color: #ddd;
+}   
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+.footer ul li a {
+    color: beige;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+.footer ul li a:hover {
+    color: #ddd;
+}   

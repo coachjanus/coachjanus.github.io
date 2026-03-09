@@ -9,11 +9,18 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    /* font-size: 2.5em; */
+    font-size: calc(2.45rem + 1.05vw);
+    font-weight: 500;
 }
 
 header p {
     margin: 5px 0 0;
     font-size: 1.2em;
     color: beige;
+    font-style: oblique 10deg;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 4px 4px 8px rgba(0, 0, 0, 0.2);
 }

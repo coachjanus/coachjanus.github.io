@@ -10,21 +10,23 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+    font-size: 0.875rem; /* == 14/16 */
+    -webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 0;
     color: var(--mainTextColor);
 }
 
 a {
-    color: darkslategray;
+    /* color: darkslategray; */
+    text-decoration: none;
 }
 
-
-pre {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border: 1px solid #ddd;
-    overflow-x: auto;
-    color: var(--preTextColor);
-}
