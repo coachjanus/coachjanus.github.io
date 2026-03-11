@@ -5,7 +5,7 @@ footer {
     color: beige;
     text-align: start;
     padding: 10px 0;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     bottom: 0;
 }
