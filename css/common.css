@@ -1,7 +1,11 @@
 /* Common Styles */
-html {
+
+:root {
     --mainTextColor: darkslategray;
     --preTextColor: darkred;
+}
+
+html {
     background-color: #f0f0f0;
 }
 
@@ -29,4 +33,17 @@ a {
     /* color: darkslategray; */
     text-decoration: none;
 }
+a:hover {
+    color: var(--preTextColor);
+    text-decoration: underline;
+}
 
+a:link::after {
+     /* content: " (" attr(href) ")";  */
+    }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

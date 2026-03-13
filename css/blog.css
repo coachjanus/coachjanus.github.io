@@ -1,0 +1,65 @@
+.blog-post {
+    margin-bottom: 2rem;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.blog-post h2 {
+    color: var(--mainTextColor);
+    margin-bottom: 0.5rem;
+}
+.blog-post p {
+    color: var(--mainTextColor);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}   
+.blog-post img {
+    margin: 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    width: 12rem;
+    object-fit: cover;
+}   
+
+.blog-content {
+    display: inline-block;
+    max-width: 70%;
+    margin: 1rem;
+    vertical-align: top;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--mainTextColor);
+    color: #fff;
+    border: 1px solid whitesmoke  ;
+    border-radius: 9%;
+    cursor: pointer;
+   
+}
+
+.read-more:hover {
+    background-color: var(--preTextColor);
+    border-color: var(--preTextColor);
+    outline: 2px solid blue;
+}   
+
+.float-container{
+    /* display: block; */
+    width: 100%;
+    display: flow-root;
+}
+
+.float-right {
+    float: right;
+    max-width: 60%;
+    width: 100%;
+    margin-left: 2rem;
+}  
+.float-left {
+    float: left;
+    max-width: 30%;
+    
+}  
