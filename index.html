@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,89 +8,219 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
 
-   
+
 </head>
+
 <body>
+
     <!-- navigation -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="catalog.html">Shop</a>
-        <a href="blog.html">Blog</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>    
-    </nav>
-    
-    <!-- main content  -->
-    <main id="main-content">
 
-        <header>
-            <p>Елемент header зазвичай має містити заголовок розділу</p>
-            <h1 class="text-shadow">Welcome to My Website</h1>
-        </header>
-
-        <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ol>
-
-        <p>This is a <b>bold</b> statement <i>in italics</i> on my website.</p>
-        <p>This is a <strong>bold</strong> statement <em>in italics</em> on my website.</p>
-        <a href="https://www.google.com" target="_blank">Visit Google.com</a>
-
-
-        <div class="post">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <small style="color: var(--preTextColor);">Small text</small> Ad harum eaque atque voluptatibus ullam fugit. Natus ipsa deserunt, quo debitis tenetur officia, inventore voluptatibus sunt nisi animi eum repellendus ex?</p>
-
-            <h3 class="h3">Heading 3</h3>
-            <p class="parent">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="child">A maxime repellendus debitis esse suscipit molestiae corrupti possimus voluptatem modi!</span> Natus accusamus sequi atque! Blanditiis sint dignissimos, nihil facere ut dolorum.</p>
-
-            <h3 class="h3">Heading 3</h3>
-            <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. A maxime repellendus debitis esse suscipit molestiae corrupti possimus voluptatem modi! Natus accusamus sequi atque! Blanditiis sint dignissimos, nihil facere ut dolorum.</p>
-
-
-            <h3 class="h3"  >Heading 3</h3>
-            <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. A maxime repellendus debitis esse suscipit molestiae corrupti possimus voluptatem modi! Natus accusamus sequi atque! Blanditiis sint dignissimos, nihil facere ut dolorum.</p>
-
+    <header class="app-header">
+        <span class="app-nav">
+            <a href="#" class="button">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </span>
+        <div class="app-header-logo">
+            <span class="app-header-logo-emphasis">Super pretty </span> store
         </div>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <nav class="app-header-links">
+            <a href="auth.html"><i class="fa-regular fa-user"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+            <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+        </nav>
+    </header>
 
-        <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. A maxime repellendus debitis esse suscipit molestiae corrupti possimus voluptatem modi! Natus accusamus sequi atque! Blanditiis sint dignissimos, nihil facere ut dolorum.</p>
 
+    <!-- main content  -->
+    <main id="main-content" class="app-main">
 
+        <section id="hero" class="hero bg-cover bg-center py-4 px-4"
+            style="background-image: url(/images/hero-bg.jpg);">
+            <div class="container">
+                <p>New Inspiration 2026 </p>
+                <h1 class="text-shadow">20% off on new season </h1>
+                <a href="" class="btn btn-hero">Browse collection </a>
+            </div>
+        </section>
 
-        <blockquote cite="https://www.ukrlib.com.ua/books/printit.php?tid=1052">Но зла Юнона, суча дочка, Розкудкудакалась, як квочка, — Енея не любила — страх; Давно уже вона хотіла, Його
-        щоб душка полетіла К чортам і щоб і дух не пах.
-        </blockquote>
+        <div class="app-main-content">
+            <div class="app-content">
+                <article>
 
-        <pre>
-        Но зла Юнона, суча дочка,
-        Розкудкудакалась, як квочка, —
-        Енея не любила — страх;
-        Давно уже вона хотіла,
-        Його щоб душка полетіла
-        К чортам і щоб і дух не пах.
-        </pre>
+                    <section>
+                        <div class="product-container px-4 py-4">
+                            <div class="card card-badge">
+                                <div class="card-figure">
+                                    <div class="icons">
+                                        <a href="#!" class="fa-solid fa-cart-shopping" title="Add to cart"></i>
+                                        <a href="#!" class="fas fa-heart" title="Like this"></a>
+                                        <a href="#!" class="fas fa-eye" title="View details"></a>
+                                    </div>
+                                    <picture class="picture">
+                                        <img src="images/product-6.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Card title</div>
+                                    <span class="card-price">123</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-figure">
+                                    <div class="icons">
+                                        <a href="cart.html" class="fas fa-shopping-cart"></a><a href="http://google.com"
+                                            class="fas fa-heart"></a><a href="#" class="fas fa-eye"></a>
+                                    </div>
+                                    <picture class="picture">
+                                        <img src="images/product-5.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Card title</div>
+                                    <span class="card-price">123</span>
+                                </div>
+                            </div>
+                            <div class="card card-badge">
+                                <div class="card-figure">
+                                    <div class="icons">
+                                        <a href="#" class="fas fa-shopping-cart"></a><a href="#"
+                                            class="fas fa-heart"></a><a href="#" class="fas fa-eye"></a>
+                                    </div>
+                                    <picture class="picture">
+                                        <img src="images/product-7.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Card title</div>
+                                    <span class="card-price">123</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-figure">
+                                    <div class="icons">
+                                        <a href="cart.html" class="fas fa-shopping-cart"></a><a href="http://google.com"
+                                            class="fas fa-heart"></a><a href="#" class="fas fa-eye"></a>
+                                    </div>
+                                    <picture class="picture">
+                                        <img src="images/product-5.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Card title</div>
+                                    <span class="card-price">123</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-figure">
+                                    <div class="icons">
+                                        <a href="cart.html" class="fas fa-shopping-cart"></a><a href="http://google.com"
+                                            class="fas fa-heart"></a><a href="#" class="fas fa-eye"></a>
+                                    </div>
+                                    <picture class="picture">
+                                        <img src="images/product-5.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Card title</div>
+                                    <span class="card-price">123</span>
+                                </div>
+                            </div>
+                            <div class="card card-badge">
+                                <div class="card-figure">
+                                    <div class="icons">
+                                        <a href="#" class="fas fa-shopping-cart"></a><a href="#"
+                                            class="fas fa-heart"></a><a href="#" class="fas fa-eye"></a>
+                                    </div>
+                                    <picture class="picture">
+
+                                        <img src="images/product-6.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <span class="card-title">Card title</span>
+                                    <span class="card-price">123</span>
+                                </div>
+                            </div>
+                            <div class="card card-badge">
+                                <div class="card-figure">
+                                    <div class="icons">
+                                        <a href="#" class="fas fa-shopping-cart"></a><a href="#"
+                                            class="fas fa-heart"></a><a href="#" class="fas fa-eye"></a>
+                                    </div>
+                                    <picture class="picture">
+                                        <img src="images/product-6.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Card title</div>
+                                    <span class="card-price">123</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-figure">
+                                    <div class="icons">
+                                        <a href="cart.html" class="fas fa-shopping-cart"></a><a href="http://google.com"
+                                            class="fas fa-heart"></a><a href="#" class="fas fa-eye"></a>
+                                    </div>
+                                    <picture class="picture">
+                                        <img src="images/product-5.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Card title</div>
+                                    <span class="card-price">123</span>
+                                </div>
+                            </div>
+                            <div class="card card-badge">
+                                <div class="card-figure">
+                                    <div class="icons">
+                                        <a href="#" class="fas fa-shopping-cart"></a><a href="#"
+                                            class="fas fa-heart"></a><a href="#" class="fas fa-eye"></a>
+                                    </div>
+                                    <picture class="picture">
+                                        <img src="images/product-6.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Card title</div>
+                                    <span class="card-price">123</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
 
     </main>
- 
-<!-- footer -->
-<footer id="footer">
-    <div class="footer">
-        <div class="row">
-        <a href="#"><i class="fa-brands fa-facebook-f text-shadow"></i></a>
-        <a href="#"><i class="fab fa-instagram text-shadow"></i></a>
-        <a href="#"><i class="fa-brands fa-square-youtube text-shadow"></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter text-shadow"></i></a>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa-brands fa-facebook-f text-shadow"></i></a>
+                <a href="#"><i class="fab fa-instagram text-shadow"></i></a>
+                <a href="#"><i class="fa-brands fa-square-youtube text-shadow"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter text-shadow"></i></a>
+            </div>
+            <ul>
+                <li><a href="/privacy.html">Privacy Policy</a></li>
+                <li><a href="/terms.html">Terms of Service</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+            <hr>
+            <p>&copy; 2026 My Website. All rights reserved.</p>
         </div>
-    <ul>
-        <li><a href="/privacy.html">Privacy Policy</a></li>
-        <li><a href="/terms.html">Terms of Service</a></li>
-        <li><a href="/contact.html">Contact Us</a></li>  
-    </ul>
-    <hr>
-    <p>&copy; 2026 My Website. All rights reserved.</p>
-    </div>
-</footer>
+    </footer>
 
 </body>
+
 </html>

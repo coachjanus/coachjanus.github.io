@@ -1,6 +1,61 @@
 /* Navigation Styles */
 
+.app-header {
+     display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    
+    padding: 1rem 2rem;
+    background-color: var(--muteColor);
+    color: white;
+}
+.nav {
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    
+}
+.nav li {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 9%;
+    /* transition: background-color 0.3s ease, color 0.3s ease; */
+}
+.nav li:hover {
+    /* background-color: var(--preTextColor); */
+    color: white;
+    outline: 2px solid blue;
+}
 
-li:first-of-type + li {
-    color: red;
+.app-header-logo {
+    font-weight: 700;
+    margin: 0;
+    max-width: 100%;
+    word-spacing: .2em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px hsla(0 0% 0% / .08);
+    overflow: hidden;
+    white-space: nowrap;
+    color: blue;
+    align-items: center;
+    flex: 1; 
+}
+
+.app-header-logo-emphasis {
+    margin-right: .2em;
+    color: var(--accentColor);
+}
+
+.app-header-links {
+    /* display: flex;
+    align-items: center; */
+}
+
+.app-header-links a {
+    margin-left: 1.25em;
+    color: var(--textColor);
+
 }

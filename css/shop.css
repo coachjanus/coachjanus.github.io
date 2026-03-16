@@ -1,9 +1,13 @@
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+} 
+
 .shop-header {
     color: deeppink;
-}
-
-.hero{
-
 }
 
 .image img {
@@ -12,20 +16,15 @@
     object-fit: cover;
 }
 
-.bg-cover {
-    background-color: antiquewhite;
-    background-size: cover;
-    
-}
-.bg-center {
-    background-position: center;
-
-}
 
 .card {
-    width: 14em;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--muteColor);
+    
     min-width: 0;
     background-color: whitesmoke;
+    max-width: 14rem;
 }
 
 .card-body {
@@ -52,7 +51,8 @@
     display: inline-block;
     transition: background-color 0.3s ease;
 }
-.card-body .btn:hover {    background-color: darkmagenta;
+.card-body .btn:hover {    
+    background-color: darkmagenta;
 } 
 
 .card-body .btn:active {
@@ -81,54 +81,6 @@
     object-fit: cover;
 }
 
-.hero {
-    background-image: url('../images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: left;
-    padding: 4rem 1rem;
-
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: gray;
-}
-
-.divider {
-    background-image: url('../images/divider-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-    text-align: right;
-    padding: 4rem 1rem;
-}   
-
-
-.percents {
-    background: linear-gradient(to right, rgba(0, 64, 9, 0.89) 2em, #025a1ff1 3em, rgb(6, 162, 79) 7em, rgba(60, 200, 70, 0.89) 12em);
-}
-
-.btn-hero {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}   
-
-.picture {
-    display: block;
-    width: 100%;
-    height: auto;
-    position: relative;
-}
 
 .heart {
     position: absolute;
@@ -139,4 +91,54 @@
     fill: red;
     cursor: pointer;
     transition: transform 0.3s ease;
+}
+
+.card-figure .icons {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    z-index: -10;
+
+}
+
+.card-figure:hover .icons {
+    z-index: 10;
+}
+
+.card .icons a {
+    text-decoration: none;
+}
+.card .icons a {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    background-color: white;
+    color: var(--navColor);
+}
+
+.card .icons a:hover {
+    color: var(--accentColor);
+    background-color: var(--muteColor);
+}
+
+.card-badge::before {
+    background-color: red;
+    color: white;
+    content: "New";
+    position: absolute;
+    top: .5rem;
+    right: -1.8rem;
+    width: 6em;
+    text-align: center;
+     z-index: 2;
+    transform: rotate(45deg);
+}
+
+
+.card-price::before {
+    content: "$";
 }

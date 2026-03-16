@@ -5,21 +5,9 @@
     margin-top: 20px;
     margin-bottom: 10px;
 }
-
-.item {
-    color: #666;
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-.parent {
-    color: #999;
-    font-size: 0.9em;
-    margin-top: 10px;
-}
-
-.parent > .child {
-    color: yellow;
-    background-color: cornflowerblue;
-    font-size: 1.1em;
+.p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }

@@ -1,0 +1,26 @@
+/* gradient.css */
+
+
+.percents {
+    background: linear-gradient(to right, rgba(0, 64, 9, 0.89) 2em, #025a1ff1 3em, rgb(6, 162, 79) 7em, rgba(60, 200, 70, 0.89) 12em);
+}
+
+.btn-hero {
+    background-color: #eee6e6;
+    /* background: linear-gradient(rgb(237, 10, 10), #830303); */
+    color: #fff;
+    padding: 1em;
+    font-size: 1rem;
+    border: 2px solid gold;
+    border-radius: 5%;
+    /* background: linear-gradient(rgb(0, 66, 128), #025a1ff1, rgb(0, 255, 149), gold); */
+    /* background: linear-gradient(to top left, rgb(0, 66, 128), #025a1ff1, rgb(0, 255, 149), gold); */
+    /* background-image: linear-gradient(to right, rgb(0, 225, 0) 5%, rgb(30, 205, 5) 17%, rgb(0, 155, 85) 40%, rgb(2, 55, 1) 85%, #025a1ff1 95% );*/
+
+
+/* background: -webkit-gradient(linear, left top, right top, from(rgb(0, 255, 0)), color-stop(5%, rgb(0, 225, 0)), color-stop(17%, rgb(30, 205, 5)), color-stop(40%, rgb(0, 155, 85)), color-stop(85%, rgb(2, 55, 1)), to(#025a1ff1)); */
+
+background: -webkit-gradient( linear, left top, right top, from(rgb(25, 76, 192)), color-stop(20%, rgb(196, 26,
+3)), color-stop(40%, rgb(236, 190, 6)), color-stop(60%, rgb(25, 76, 192)), color-stop(80%, rgb(3, 116, 8)),
+to(rgb(196, 26, 3))); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}

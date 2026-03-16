@@ -2,7 +2,13 @@
 
 :root {
     --mainTextColor: darkslategray;
-    --preTextColor: darkred;
+
+        --linkColor : rgba(9, 89, 9, .7);
+        --navColor : hsl(0, 0%, 90%);
+        --textColor : hsl(0, 0%, 25%);
+        --muteColor : hsl(0, 0%, 95%);
+        --bgColor: hsl(0, 0%, 22%);
+        --accentColor : hsl(300, 50%, 50%);
 }
 
 html {
@@ -14,7 +20,6 @@ html {
 }
 
 body {
-
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -27,10 +32,10 @@ body {
     margin: 0;
     padding: 0;
     color: var(--mainTextColor);
+    min-height: 100vh;
 }
 
 a {
-    /* color: darkslategray; */
     text-decoration: none;
 }
 a:hover {
@@ -38,12 +43,80 @@ a:hover {
     text-decoration: underline;
 }
 
-a:link::after {
-     /* content: " (" attr(href) ")";  */
-    }
 
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
+
+.bg-cover {
+    background-color : antiquewhite ;
+    background-size : cover;
+}
+.bg-center {
+    background-position:top 700;
+}
+.bg-attachment {
+    background-attachment : fixed;
+}
+
+.hero {
+    color: white;
+    text-align: left;
+    padding: 4rem 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+.divider {
+    color: white;
+    text-align: right;
+    padding: 4rem 1rem;
+}   
+
+.btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}   
+
+.picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.py-4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.py-8 {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+.px-4 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* 
+.app-main {
+    background-color: var(--muteColor);
+    display: flex;
+    flex-flow: column;
+    min-width: 0%;
+    flex: 1 1 0%;
+} */
