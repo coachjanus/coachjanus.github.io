@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+           position: relative;
+           display: grid;
+           gap: 1em;
+
+    /* grid-template-columns: 200px 400px 500px; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: 2fr 20% 120px 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* grid-template-columns: repeat(auto-fit, minmax(13em, 1fr)); */
+        }
+    .box {
+            padding: 1em;      
+            background-color: crimson;
+            font-size: 3rem;
+            color: white;
+            border: 2px white solid;
+
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "header header header header"
+                "main main main aside"
+                "footer footer footer footer";
+        }
+
+        header {
+            border: 1px red solid;
+            background-color: blueviolet;
+            grid-area: header;
+        }
+        footer {
+            border: 1px green solid;
+            background-color: chocolate;
+            grid-area: footer;
+        }
+        main {
+            border: 1px blue solid;
+            background-color:aqua;
+            grid-area: main;
+            /* order: 2; */
+        }
+        aside {
+            border: 1px yellow solid;
+            background-color: deeppink;
+            grid-area: aside;
+            /* order: 1; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>
+
+    <div class="grid-container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <main>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis eius dolore reiciendis consequuntur temporibus harum, veritatis debitis ex consequatur a enim unde, aspernatur ad! Assumenda quasi distinctio error nam officia!</div>
+        </main>
+        <aside>
+            <ul>
+                <li><a href="/privacy.html">Privacy Policy</a></li>
+                <li><a href="/terms.html">Terms of Service</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+        </aside>
+
+        <footer>
+            <p>&copy; 2026 My Website. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+.table {
+    width: 100%;
+    text-align: start;
+    border-collapse: collapse;
+}
+
+.table thead {
+    background-color: hsla(0, 0%, 0%, .075);
+}
+
+.table tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.cart-main {
+    padding: .5rem;
+    flex: 3;
+}
+
+.cart-aside {
+    padding: .5rem;
+    flex: 1;
+}

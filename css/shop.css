@@ -1,8 +1,14 @@
 
 .product-container {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center; */
+
+    position: relative;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
     justify-content: center;
 } 
 
