@@ -1,19 +1,19 @@
 /* Navigation Styles */
 
 .app-header {
-     display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center; 
     
-    padding: 1rem 2rem;
+    padding: 0rem 1rem;
     background-color: var(--muteColor);
     color: white;
 }
 .nav {
     list-style: none;
-    padding: 1rem;
+    padding: .5rem 1rem;
     display: flex;
-    gap: 1rem;
+    /* gap: 1rem; */
     
 }
 .nav li {
@@ -49,13 +49,79 @@
     color: var(--accentColor);
 }
 
-.app-header-links {
-    /* display: flex;
-    align-items: center; */
-}
 
 .app-header-links a {
     margin-left: 1.25em;
     color: var(--textColor);
 
 }
+
+
+label.btn{
+    display: none;
+}
+
+
+#check{
+    display: none;
+}
+
+
+@media (max-width:650px){
+     ul.nav{
+        display: block;
+        position: fixed;
+        top: -2em;
+        left: -200%;
+        width: 100%;
+        min-width: 400px;
+        padding: .5rem 1rem;
+        height: 100%;
+        background: #c6deec;
+
+        z-index: 12;
+        transition: all 0.4s ease;
+    }
+
+    ul.nav a{
+        display: block;
+
+        width: 100%;
+        padding: .5rem 1rem;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    ul.nav a:hover::before{
+        box-shadow: none;
+    }
+
+    .app-header {
+        padding: 2rem 1rem;
+    }
+
+    label.bars{
+        display: block;
+    }
+
+    label.btn{
+        color: #31344b;
+        font-size: 18px;
+        cursor: pointer;
+        border-width: 0;
+       
+    }
+
+    #check:checked~label.bars{
+        display: none;
+    }
+ 
+    #check:checked~ul label.cancel{
+        display: block;
+    }
+
+    #check:checked~ul{
+        left: 0;
+    } 
+
+} 

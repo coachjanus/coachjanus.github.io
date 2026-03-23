@@ -15,6 +15,20 @@
     border: 1px solid blue;
     grid-column: 5 / 6;
 }
+
+@media (max-width:650px) {
+    .contact-main {
+        border: 1px solid green;
+        grid-column: 1 / 6;
+
+    }
+
+    .contact-aside {
+        border: 1px solid blue;
+        grid-column: 1 / 6;
+    }
+
+}
 /* 
 @media (max-width: 786px) {
     .contact-header {
