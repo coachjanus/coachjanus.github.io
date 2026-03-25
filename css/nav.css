@@ -40,7 +40,7 @@
     overflow: hidden;
     white-space: nowrap;
     color: blue;
-    align-items: center;
+    align-items: flex-start;
     flex: 1; 
 }
 

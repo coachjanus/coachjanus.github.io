@@ -4,128 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
-    <link rel="stylesheet" href="css/main.css">
+    <style>
+        img {
+            display: block;
+            transition-duration: 1s;
+        }
+
+        img:hover {
+            /* transform: rotate(30deg) translateX(20%); */
+            /* transform: rotate(30deg); */
+            translate: 200px;
+            transform:scale(.5, .5)
+
+        }
+
+        @keyframes rainbow {
+            0% { background-color: red; }
+            20% { background-color: orange; }
+            35% { background-color: yellow; }
+            50% { background-color: green; }
+            60% { background-color: blue; }
+            80% { background-color: indigo; }
+            100% { background-color: violet; }
+        }
+        /* додамо назву анімації */
+        .box{
+            animation-name: rainbow;
+            padding: 4rem;
+            background-color: blueviolet;
+            animation-duration: 15s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 3;
+        }
+    </style>
 </head> 
 <body>
-
-    <div class="app">
-        <aside class="app-nav">
-            <header class="app-nav-header">
-                Navigation
-            </header>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Catalog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </aside>
-        <main class="app-main">
-            <header class="app-main-header">
-                <div class="app-main-header--logo">
-                    Super store
-                </div>
-                <nav class="app-main-header--links">
-                    <i class="fa-regular fa-user"></i>
-                    <i class="fa-solid fa-cart-plus"></i>
-                    <i class="fa-regular fa-heart"></i>
-                </nav>
-            </header>      
-            
-            <section id="hero" class="hero bg-cover bg-center" style="background-image: url(images/bg-banner.jpg);">
-                <div class="container">
-                    <p>New Inspiration 2026</p>
-                    <h1>20% off on new season</h1>
-                    <a href="" class="btn btn-hero">Browse collection</a>
-                </div>
-
-            </section>
-
-            <div class="app-main-content">
-                <div class="app-content">
-                    <article>
-                        <section>
-                            <div class="product-container">
-                                <div class="card">
-                                    <div class="card-figure">
-                                        <figure class="image">
-                                            <img src="images/product-6.jpg" alt="">
-
-                                        </figure>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">Card title</div>
-                                        <span>123</span>
-                                    </div>
-                                </div>
-<!-- 
-
-Елемент picture — це контейнер, який надає кілька джерел для елемента img, що міститься в ньому, щоб дозволити авторам декларативно контролювати або надавати підказки агенту користувача щодо того, який ресурс зображення використовувати, на основі щільності пікселів екрана, розміру області перегляду, формату зображення та інших факторів. Він представляє його дочірні елементи.
-
-HTML-елемент <picture> містить нуль або більше елементів <source> та один елемент <img>, щоб запропонувати альтернативні версії зображення для різних сценаріїв відображення/пристрою.
-
-Браузер розглядатиме кожен дочірній елемент <source> та вибиратиме серед них найкращий збіг. Якщо збігів не знайдено — або браузер не підтримує елемент <picture> — вибирається URL-адреса атрибута src елемента <img>. Потім вибране зображення відображається в просторі, зайнятому елементом <img>.
-
     
-<picture>
-  <source
-    srcset="/images/product.jpg"
-    media="(orientation: portrait)" />
-  <img src="/images/product.jpg" alt="" />
-</picture>
--->
-                                <div class="card">
-                                    <div class="card-picture">
-                                        <picture class="image">
-                                            <img src="images/product-6.jpg" alt="">
+    <img src="images/product-5.jpg" alt="" srcset="">
 
-                                        </picture>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">Card title</div>
-                                        <span>123</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </article>
-                </div>
-            </div>
+    <div class="box">
 
-            <svg width="300" height="200">
-
-                <rect width="100%" height="100%" fill="red"></rect>
-            <circle cx="150" cy="100" r="80" fill="green">
-
-                
-            </svg>
-
-            <svg width="300" height="200"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09
-                3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="red"></path></svg>
-        </main>
- 
     </div>
 
-    
-    <!-- footer start -->
-    <footer>
-        <nav class="navigation">
-            <ol>
-                <li><a href="about.html">Category 1</a></li>
-            <li><a href="about.html">Category 2</a></li>
-            <li><a href="about.html">Category 3</a></li>
-            </ol>
-        </nav>
-
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-google"></i>
-        <i class="fa-brands fa-linkedin"></i>
-
-    <b id="company">My company</b>
-    © <em>copyright</em> <i>copyright</i> &copy; copyright <strong  class="main--header">My company</strong> 2025
-    </footer>
-    <!-- footer end -->
 </body> 
 </html>

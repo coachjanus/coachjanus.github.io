@@ -97,6 +97,14 @@ img {
     position: relative;
 }
 
+.picture:hover {
+    /* transform: rotate(45deg); */
+    transform: scaleX(-1);
+    transition: 2s ease-in-out;
+    filter: grayscale(40%);
+
+}
+
 .py-4 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -111,12 +119,3 @@ img {
     padding-left: 2rem;
     padding-right: 2rem;
 }
-
-/* 
-.app-main {
-    background-color: var(--muteColor);
-    display: flex;
-    flex-flow: column;
-    min-width: 0%;
-    flex: 1 1 0%;
-} */
