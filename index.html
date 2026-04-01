@@ -33,9 +33,9 @@
         </ul>
         
         <nav class="app-header-links">
-            <a href="auth.html"><i class="fa-regular fa-user"></i></a>
-            <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
-            <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+            <a href="#!"  onclick="window.login.showModal();"  title="Sign In"><i class="fa-regular fa-user"></i></a>
+            <a href="cart.html" title="Shopping Cart"><i class="fa-solid fa-cart-plus"></i></a>
+            <a href="wishlist.html" title="Wishlist"><i class="fa-regular fa-heart"></i></a>
         </nav>
     </header>
 
@@ -315,6 +315,24 @@
         </div>
     </footer>
 
+
+    <dialog id="login">
+        <a href="#!" onclick="window.login.close();" title="Close" class="close fas fa-times"></a>
+        <div class="card">
+            <h2>Login</h2>
+            <form class="form-container">
+                <div class="input-group">
+                    <label class="form-label">Username or email address<span>*</span></label>
+                    <input type="text" placeholder="Username or Email" required class="form-control">
+                </div>
+                <div class="input-group">
+                    <label class="form-label">Password<span>*</span></label>
+                    <input type="password" placeholder="Password" required class="form-control">
+                </div>
+                <input type="submit" value="Sign In" />
+            </form>
+        </div>
+    </dialog>
 </body>
 
 </html>

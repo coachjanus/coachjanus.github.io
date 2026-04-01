@@ -9,33 +9,91 @@
     
     <style></style>
     <script>
+    function showAlert(msg) {
+        console.log(msg);
+    }
+    // (
+    //     () => {
+    //         console.log("Hello, World! I'm an Immediately invoked function expressions.");
+    //         showAlert();
+    //     }
 
-        // console.log("Hello, World!");
+    // )();
+    (
+        function(message) {
+            console.log("Hello, World! I'm an Immediately invoked function expressions.");
+            showAlert(message);
+        }
 
-        // 1a = 5; 
-        // This will cause a syntax error because variable names cannot start with a number.
+    )("Hello, World! I'm an console message box.");
 
-        /**
-         * 
-         * 
-         * \/ This is a single-line comment
-         * This is a multi-line comment
-        **/
+    function greeting(name) {
+        console.log("Hello " + name);
+    }
 
-        // a1 = 5;
-        // A1 = 10;
-        // console.log(a1);
-        // console.log(A1);
-        // b = "Hello";
-        // console.log(b); c = "World";
-        // console.log(c);
+    function getUserName(callback) {
+        const name = prompt("Enter your name: ");
+        callback(name);
+    }
 
+    // getUserName(greeting);
+
+    let isMember = false;
+    let message = isMember ? 'Welcome Back!' : 'You need to login'; 
+    console.log(message);
+
+    function doSomething(n) {
+        if(n === 0) {
+            console.log("TASK COMPLETED!")
+            return
+        }
+        console.log("I'm doing something.")
+        doSomething(n - 1)
+    }
+    // doSomething(3)
+
+    // for(let i = 0; i < 5; i++) {
+    //     console.log(i);
+    // }
+
+    const numbers = [1, 22, 123, 0, 15, 9, 88, 123];
+    const sortedNumbers = numbers.sort((a, b) => a - b);
+    console.log(sortedNumbers); 
+
+    // numbers.forEach(num => console.log(num));
+    // numbers.map(num => num * 2).forEach(num => console.log(num));
+    // numbers.filter(num => num > 10).forEach(num => console.log(num));
+    // numbers.reduce((acc, num) => acc + num, 0);
+    numbers.pop();
+    console.log(numbers);
+    numbers.push(777);
+    console.log(numbers);
+    numbers.shift();
+    console.log(numbers);
     </script>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
 </head>
 
 <body>
-   <button onclick="showAlert()">Click me</button>
+   <!-- <button onclick="showAlert()">Click me</button> -->
+<dialog id="login">
+    <a href="#!" onclick="window.login.close();" title="Close" class="close fas fa-times"></a>
+    <div class="card">
+        <h2>Login</h2>
+        <form class="form-container">
+            <div class="input-group">
+                <label class="form-label">Username or email address<span>*</span></label>
+                <input type="text" placeholder="Username or Email" required class="form-control">
+            </div>
+            <div class="input-group">
+                <label class="form-label">Password<span>*</span></label>
+                <input type="password" placeholder="Password" required class="form-control">
+            </div>
+            <input type="submit" value="Sign In" />
+        </form>
+    </div>
+</dialog>
+
 </body>
 
 </html>
