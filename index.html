@@ -8,13 +8,11 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
 
-
 </head>
 
 <body>
 
     <!-- navigation -->
-
     <header class="app-header">
         <input type="checkbox" id="check">
         <label class="btn bars" for="check"><i class="fa-solid fa-bars"></i></label>
@@ -48,7 +46,7 @@
             <div class="container">
                 <p>New Inspiration 2026 </p>
                 <h1 class="text-shadow">20% off on new season </h1>
-                <a href="" class="btn btn-hero">Browse collection </a>
+                <a href="#!" class="btn btn-hero">Browse collection </a>
             </div>
         </section>
 
@@ -154,7 +152,7 @@
                             <div class="card card-badge">
                                 <div class="card-figure">
                                     <div class="icons">
-                                        <a href="#!" class="fa-solid fa-cart-shopping" title="Add to cart"></i>
+                                        <a href="#!" class="fa-solid fa-cart-shopping add-to-cart" title="Add to cart"></i>
                                         <a href="#!" class="fas fa-heart" title="Like this"></a>
                                         <a href="#!" class="fas fa-eye" title="View details"></a>
                                     </div>
@@ -163,8 +161,8 @@
                                     </picture>
                                 </div>
                                 <div class="card-body">
-                                    <div class="card-title">Card title</div>
-                                    <span class="card-price">123</span>
+                                    <div class="card-title">Super Card</div>
+                                    <span class="card-price">777</span>
                                 </div>
                             </div>
                             <div class="card">
@@ -333,6 +331,43 @@
             </form>
         </div>
     </dialog>
+
+    <script>
+        let footer = document.getElementById("footer");
+        console.dir(footer);
+        footer.style.backgroundColor = "black";
+
+        let addToCart = document.querySelector(".add-to-cart");
+        console.dir(addToCart);
+
+        let h1 = document.querySelector(".hero .container p");
+        // h1.style.color = "red";
+        
+        h1.innerText = "New Inspiration 2026 - Updated";
+        let btnHero = document.querySelector(".btn-hero");
+        // btnHero.onclick = function() {
+        //     // h1.classList.add("p-hero");
+        //     h1.classList.toggle("p-hero");
+        // };
+
+        btnHero.addEventListener("click", function() {
+            h1.classList.toggle("p-hero");
+        });
+
+        addToCart.addEventListener("click", function() {
+            // let productCard = this.closest(".card");
+            let productCard = document.querySelector(".card");
+            let productTitle = productCard.querySelector(".card-title").innerText;
+            let productPrice = productCard.querySelector(".card-price").innerText;
+            console.log("Add to cart clicked!");
+            console.log("Product added to cart:", productTitle);
+            console.log("Product price:", productPrice);
+        });
+        // h1.classList.add("p-hero");
+        // console.dir(h1);
+    </script>
+
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
