@@ -13,5 +13,36 @@
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <script>
+
+        async function getCurrencyRate() {
+  const url = 'https://bank.gov.ua';
+
+  try {
+    // Очікуємо виконання асинхронного запиту
+    const response = await fetch(url);
+
+    // Перевіряємо, чи запит успішний (код 200-299)
+    if (!response.ok) {
+      throw new Error(`Помилка HTTP: ${response.status}`);
+    }
+
+    // Очікуємо парсинг JSON-даних
+    const data = await response.json();
+    
+    // Виводимо отримані дані в консоль
+    console.log('Курси валют отримано:', data);
+    return data;
+
+  } catch (error) {
+    // Обробка помилок мережі або сервера
+    console.error('Не вдалося отримати курс валют:', error);
+  }
+}
+
+// Виклик функції
+getCurrencyRate();
+    </script>
 </body>
 </html>
